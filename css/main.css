@@ -42,6 +42,13 @@ section h2 {
   max-width: 1220px;
 }
 
+/* Переопределяю параметр bootstrap класса, т.к из-за отрицательных
+ значений в оригинале, появляется горизонтальный скролл */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .section-description__text {
   font-size: 1.0625rem;
   text-align: center;
@@ -72,6 +79,10 @@ section h2 {
 .btn-outline-cyan {
   color: #15a2be;
   border-color: #15a2be;
+}
+
+.carousel-control i {
+  font-size: 3rem;
 }
 
 /* Конец основных стилей */
@@ -503,12 +514,8 @@ header .carousel {
   bottom: -42px;
 }
 
-.industry-carousel .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#092f3e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-
-.industry-carousel .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#092f3e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+.industry-carousel .carousel-control {
+  color: #15a2be;
 }
 
 .industry-carousel .carousel-indicators li {
@@ -526,6 +533,7 @@ header .carousel {
 .portfolio-block {
   padding-top: 55px;
   padding-bottom: 65px;
+  margin-bottom: 55px;
   background-color: #ffffff;
 }
 
@@ -582,12 +590,8 @@ header .carousel {
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
 }
 
-.portfolio-carousel .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#092f3e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-
-.portfolio-carousel .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#092f3e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+.portfolio-carousel .carousel-control {
+  color: #15a2be;
 }
 
 .portfolio-carousel .carousel-indicators li {
@@ -628,4 +632,148 @@ header .carousel {
 
 .portfolio-block table td {
   color: rgba(9, 47, 62, 0.8);
+}
+
+/* Конец стилей блока "Портфолио" */
+
+/* Начало стилей блока "Новости" */
+
+.news-block {
+  padding-bottom: 106px;
+}
+
+.news-carousel h3 {
+  font-size: 1.25rem;
+  color: #15a2be;
+}
+
+.news-carousel article {
+  padding: 9px 43px;
+}
+
+.news-carousel time {
+  display: inline-block;
+  margin-bottom: 13px;
+}
+
+.news-carousel p {
+  line-height: 1.6rem;
+}
+
+.news-carousel .carousel-control {
+  color: #15a2be;
+}
+
+.news-carousel .carousel-indicators {
+  justify-content: center;
+  bottom: -46px;
+  left: 0;
+}
+
+.news-carousel .carousel-indicators li {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.news-carousel .carousel-indicators li.active {
+  background-color: #15a2be;
+}
+
+/* Конец стилей блока "Новости" */
+
+footer {
+  background-image: linear-gradient(to right, #26b9be, #7c93c7);
+}
+
+/* Начало стилей блока "Ссылки сайта" */
+
+.site-links-block {
+  padding: 74px 0 64px;
+}
+
+.site-links-block a {
+  display: inline-block;
+  line-height: 1rem;
+  font-size: 0.875rem;
+  color: #ffffff;
+}
+
+.site-links-block .in-row li {
+  margin-bottom: 9px;
+}
+
+.site-links-block .in-row li:first-child {
+  padding-bottom: 8px;
+  margin-bottom: 0;
+}
+
+.site-links-block li:first-child a {
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.site-links-block .in-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site-links-block .in-row ul {
+  margin: 0;
+  padding: 0;
+  padding-right: 85px;
+  width: 40%;
+  list-style: none;
+}
+
+.site-links-block .in-row ul:last-child {
+  width: 20%;
+  padding-right: 0;
+
+}
+
+.site-links-block .in-column {
+  padding-left: 80px;
+}
+
+.site-links-block .in-column ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 26px;
+  list-style: none;
+}
+
+.site-links-block .in-column li {
+  margin-bottom: 9px;
+}
+
+/* Конец стилей блока "Ссылки сайта" */
+
+/* Начало стилей блока "Информация о компании" */
+
+.company-info__wrapper {
+  padding-top: 59px;
+  padding-bottom: 36px;
+  border-top: 1px solid rgba(241, 247, 249, 0.2);
+}
+
+.company-info {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.company-info__wrapper p,
+.company-info__wrapper a {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.1rem;
+}
+
+.copyright-block a {
+  display: inline-block;
+  margin-left: 32px;
 }
