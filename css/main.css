@@ -1,0 +1,631 @@
+/* Начало основных стилей */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  background-color: #f1f7f9;
+}
+
+header {
+  padding-top: 52px;
+  background-image: url(../img/bg.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+section h2 {
+  font-size: 1.875rem;
+  text-align: center;
+  color: #092f3e;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+.container  {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1220px;
+}
+
+.section-description__text {
+  font-size: 1.0625rem;
+  text-align: center;
+}
+
+.text__dark {
+  color: rgba(9, 47, 62, 0.7);
+}
+
+.text__white {
+  color: #ffffff;
+}
+
+.btn-outline-primary {
+  padding: 11px 19px 11px 29px;
+  border: 2px solid #ffffff;
+}
+
+.btn-outline-primary i {
+  margin-left: 5px;
+}
+
+.btn-outline-white {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-outline-cyan {
+  color: #15a2be;
+  border-color: #15a2be;
+}
+
+/* Конец основных стилей */
+
+/* Начало стилей шапки */
+
+.navbar {
+  padding: 0.5rem;
+  padding-left: 0.2rem;
+  justify-content: space-between;
+}
+
+.navbar-collapse {
+  flex-grow: unset;
+}
+
+.navbar-nav {
+  padding-right: 31px;
+}
+
+.navbar .btn {
+  padding: 0.375rem 1.1rem;
+  background-color: #22b9c6;
+  background-image: linear-gradient(to right, rgba(33, 187, 189, 0.45), rgba(128, 145, 199, 0.7));
+  border: none;
+}
+
+.nav-item {
+  margin-left: 25px;;
+}
+
+.nav-item .nav-link {
+  color: #ffffff;
+}
+
+.dropdown-toggle::after {
+  position: absolute;
+  margin-left: 0;
+  display: none;
+  width: 80%;
+  bottom: -12px;
+  border: none;
+  border-bottom: 2px solid #22b9c6;
+}
+
+.dropdown-toggle:hover::after,
+.dropdown-toggle:focus::after {
+  display: block;
+}
+
+.dropdown-menu {
+  padding: 1rem 0rem;
+  left: 8px;
+  top: 122%;
+  border: none;
+  border-radius: 0;
+  background-color: #1091be;
+  background-image: linear-gradient(to right, #108fbe, #16a5be);
+}
+
+.dropdown-item {
+  position: relative;
+  padding: 0.5rem 1.8rem 0.6rem 3.9rem;
+  color: #ffffff;
+}
+
+.dropdown-item svg {
+  position: absolute;
+  left: 18px;
+  top: 6px;
+  width: 29px;
+  height: 29px;
+  fill: #ffffff;
+}
+
+.dropdown-item:hover svg,
+.dropdown-item:focus svg {
+  fill: #000000;
+}
+
+.dropdown-item:active svg {
+  fill: #ffffff;
+}
+
+header .carousel {
+  padding-top: 118px;
+  padding-bottom: 221px;
+}
+
+.carousel-item {
+  padding-left: 2px;
+}
+
+.carousel-caption {
+  position: initial;
+  text-align: left;
+}
+
+.carousel-caption span {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0.8125rem;
+}
+
+.carousel-caption h5 {
+  margin-bottom: 13px;
+  padding-right: 50px;
+  font-size: 1.875rem;
+}
+
+.carousel-caption p {
+  margin-bottom: 1.9rem;
+}
+
+.carousel-control-next {
+  right: -20%;
+}
+
+.carousel-control-prev {
+  left: -20%;
+}
+
+.carousel-indicators {
+  margin: 0;
+  justify-content: flex-start;
+  bottom: 71px;
+  left: 16px;
+}
+
+.carousel-indicators li {
+  margin: 0 10px;
+  width: 10px;
+  height: 10px;
+}
+
+/* Конец стилей шапки */
+
+/* Начало стилей блока "О нас" */
+
+.about-block {
+  padding: 52px 0 58px;
+  background-color: #ffffff;
+}
+
+.about-block__title {
+  margin-bottom: 1.2rem;
+}
+
+.about-block ul {
+  padding: 15px 70px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-block .btn {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Конец стилей блока "О нас" */
+
+/* Начало стилей блока "Направление фирмы" */
+
+.directions-block {
+  margin-top: 55px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.directions-block__title {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.direction-block__toggle-wrapper {
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+}
+
+.direction-block__toggle-wrapper li {
+  padding: 7px 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid rgba(9, 47, 62, 0.15);
+}
+
+.direction-block__toggle-wrapper li.active {
+  border-color: #15a2be;
+}
+
+.direction-block__toggle-link {
+  font-size: 1.25rem;
+  color: rgba(9, 47, 62, 0.5);
+}
+
+.direction-block__toggle-wrapper li.active .direction-block__toggle-link {
+  color: #15a2be;
+}
+
+.direcions-block__list {
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.direcions-block__list li {
+  padding: 50px 50px 14px;
+  margin-bottom: 5px;
+  width: 33%;
+  text-align: center;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.direcions-block__list li:last-child {
+  padding: 83px 43px 37px;
+}
+
+.direcions-block__list li:hover {
+  box-shadow: 0 0 30px 0 rgba(41, 67, 90, 0.2);
+  z-index: 10;
+}
+
+.direcions-block__list svg {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.direcions-block__list a {
+  font-size: 1.0625rem;
+  color: #15a2be;
+}
+
+.direcions-block__list span {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 42px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #a9bac8;
+  border-radius: 5px;
+}
+
+.direcions-block__list span::before,
+.direcions-block__list span::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 12px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #a9bac8;
+  border-radius: 5px;
+}
+
+.direcions-block__list span::before {
+  left: -17px;
+}
+
+.technology-block {
+  margin-top: 100px;
+  padding-top: 53px;
+  padding-bottom: 58px;
+  background-color: #ffffff;
+}
+
+/* Конец стилей блока "Направление фирмы" */
+
+/* Начало стилей блока "Используемые технологии" */
+
+.technology-block__title {
+  margin-bottom: 45px;
+}
+
+.technology-block__list {
+  margin: 0;
+  margin-bottom: 42px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.technology-block__list li {
+  width: 20%;
+}
+
+.technology-block__list li:first-child {
+  margin-bottom: 10px;
+}
+
+.technology-block__list li:nth-child(5n) {
+  width: 9%;
+}
+
+.technology-block .btn {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Конец стилей блока "Используемые технологии" */
+
+/* Начало стилей блока "Карьера" */
+
+.career-block {
+  padding-top: 56px;
+  padding-bottom: 76px;
+  margin-bottom: 54px;
+  background-image: linear-gradient(to right, #1fbcbd, #878ec8);
+}
+
+.career-block__title {
+  margin-bottom: 37px;
+  color: #ffffff;
+}
+
+.career-block__text {
+  margin-bottom: 55px;
+}
+
+.career-block__list {
+  margin: 0;
+  margin-bottom: 61px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.career-block__list li {
+  width: 19%;
+  padding: 53px 24px 29px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.career-block__list li:hover,
+.career-block__list li:focus {
+  border-color: #ffffff;
+}
+
+.career-block__list svg {
+  margin: 0 auto;
+  margin-bottom: 36px;
+  display: block;
+  fill: #ffffff;
+  width: 60px;
+  height: 60px;
+}
+
+.career-block__list a {
+  color: #ffffff;
+}
+
+.career-block__list span {
+  display: block;
+  margin: 0 auto;
+  color: #ffffff;
+  line-height: 9px;
+}
+
+.career-block .btn {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Конец стилей блока "Карьера" */
+
+/* Начало стилей блока "Отрасли" */
+
+.industry-block {
+  padding-bottom: 105px;
+}
+
+.industry-block__title {
+  margin-bottom: 28px;
+}
+
+.industry-block__text {
+  margin-bottom: 74px;
+}
+
+.industry-carousel ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.industry-carousel ul>li {
+  width: 24%;
+}
+
+.industry-carousel li svg {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 17px;
+  width: 60px;
+  height: 60px;
+  fill: #092f3e;
+}
+
+.industry-carousel li p {
+  padding: 0 30px;
+  text-align: center;
+  color: #092f3e;
+}
+
+.industry-carousel .carousel-indicators {
+  justify-content: center;
+  bottom: -42px;
+}
+
+.industry-carousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#092f3e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.industry-carousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#092f3e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.industry-carousel .carousel-indicators li {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.industry-carousel .carousel-indicators li.active {
+  background-color: #15a2be;
+}
+
+/* Конец стилей блока "Отрасли" */
+
+/* Начало стилей блока "Портфолио" */
+
+.portfolio-block {
+  padding-top: 55px;
+  padding-bottom: 65px;
+  background-color: #ffffff;
+}
+
+.portfolio-block .container {
+  padding: 0;
+}
+
+.portfolio-block__title {
+  margin-bottom: 29px;
+}
+
+.portfolio-block__text {
+  margin-bottom: 58px;
+}
+
+.portfolio-block__list {
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.portfolio-block__list li {
+  position: relative;
+}
+
+.portfolio-block__list li:first-child {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-block__list .image__caption {
+  position: absolute;
+  padding: 30px 43px 16px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.portfolio-block__list .image__caption h3 {
+  font-size: 1.25rem;
+  color: #15a2be;
+  text-transform: uppercase;
+}
+
+.portfolio-block__list .image__caption p {
+  font-size: 1.0625rem;
+}
+
+.small-image__caption-wrapper {
+  margin-top: 25px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-carousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#092f3e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.portfolio-carousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#092f3e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.portfolio-carousel .carousel-indicators li {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-carousel .carousel-indicators li.active {
+  background-color: #15a2be;
+}
+
+.portfolio-carousel .carousel-indicators {
+  bottom: -23px;
+  left: 13px;
+}
+
+.portfolio-block .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.portfolio-block table {
+  margin-top: 132px;
+  width: 100%;
+}
+
+.portfolio-block table th,
+.portfolio-block table td {
+  width: 25%;
+  text-align: center;
+}
+
+.portfolio-block table th {
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+  color: #15a2be;
+}
+
+.portfolio-block table td {
+  color: rgba(9, 47, 62, 0.8);
+}
