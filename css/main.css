@@ -62,13 +62,13 @@ section h2 {
   color: #ffffff;
 }
 
+.btn i {
+  margin-left: 5px;
+}
+
 .btn-outline-primary {
   padding: 11px 19px 11px 29px;
   border: 2px solid #ffffff;
-}
-
-.btn-outline-primary i {
-  margin-left: 5px;
 }
 
 .btn-outline-white {
@@ -79,6 +79,12 @@ section h2 {
 .btn-outline-cyan {
   color: #15a2be;
   border-color: #15a2be;
+}
+
+.btn-primary {
+  background-color: #1193be;
+  background-image: linear-gradient(to right, rgba(33, 187, 189, 0.45), rgba(128, 145, 199, 0.45));
+  border: none;
 }
 
 .carousel-control i {
@@ -135,6 +141,15 @@ section h2 {
   height: 10px;
 }
 
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
 /* Конец основных стилей */
 
 /* Начало стилей шапки */
@@ -174,6 +189,8 @@ section h2 {
   display: none;
   width: 80%;
   bottom: -12px;
+  background-color: transparent;
+  height: 15px;
   border: none;
   border-bottom: 2px solid #22b9c6;
 }
@@ -239,6 +256,7 @@ header .carousel {
   padding: 15px 70px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -289,7 +307,7 @@ header .carousel {
   color: #15a2be;
 }
 
-.direcions-block__list {
+.services__list {
   padding: 0;
   margin: 0;
   margin-top: 40px;
@@ -300,25 +318,28 @@ header .carousel {
   list-style: none;
 }
 
-.direcions-block__list li {
-  padding: 50px 50px 14px;
+.services__list li {
   margin-bottom: 5px;
   width: 33%;
-  text-align: center;
   background-color: #ffffff;
+}
+
+.services__list div {
+  padding: 50px 50px 14px;
+  text-align: center;;
   z-index: 1;
 }
 
-.direcions-block__list li:last-child {
+.main-page .services__list li:last-child div {
   padding: 83px 43px 37px;
 }
 
-.direcions-block__list li:hover {
+.services__list li:hover {
   box-shadow: 0 0 30px 0 rgba(41, 67, 90, 0.2);
   z-index: 10;
 }
 
-.direcions-block__list svg {
+.services__list svg {
   margin: 0 auto;
   margin-bottom: 20px;
   display: block;
@@ -326,12 +347,12 @@ header .carousel {
   height: 60px;
 }
 
-.direcions-block__list a {
+.services__list a {
   font-size: 1.0625rem;
   color: #15a2be;
 }
 
-.direcions-block__list span {
+.services__list span {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -342,8 +363,8 @@ header .carousel {
   border-radius: 5px;
 }
 
-.direcions-block__list span::before,
-.direcions-block__list span::after {
+.services__list span::before,
+.services__list span::after {
   content: '';
   position: absolute;
   top: -2px;
@@ -355,7 +376,7 @@ header .carousel {
   border-radius: 5px;
 }
 
-.direcions-block__list span::before {
+.services__list span::before {
   left: -17px;
 }
 
@@ -427,6 +448,7 @@ header .carousel {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -489,6 +511,7 @@ header .carousel {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
@@ -781,3 +804,163 @@ footer {
   display: inline-block;
   margin-left: 32px;
 }
+
+
+/* --------------- Страница Услуги --------------- */
+
+
+/* Начало стилей для шапки */
+
+.services header {
+  margin-bottom: 30px;
+  background-image: none;
+}
+
+.services header::after {
+  background-image: linear-gradient(to right, #0a4451, #0f3b53);
+  z-index: -2;
+}
+
+.services header::before {
+  background-image: url('../img/services-bg.jpg');
+  background-position: -75px -130px;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.services header::after,
+.services header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 197px;
+}
+
+.logo-link {
+  display: block;
+}
+
+.breadcrumb {
+  padding: 1.75rem 0.3rem;
+  background-color: transparent;
+}
+
+.breadcrumb a,
+.breadcrumb .active {
+  color: #ffffff;
+  font-size: 0.8125rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "\\";
+  color: #ffffff;
+}
+
+/* Конец стилец для шапки */
+
+/* Начало стилей блока "Услуги" */
+
+.services .services-block {
+  margin-bottom: 145px;
+}
+
+.services .services-block h2 {
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.services .services__list li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 202px;
+}
+
+.services .services__list div {
+  width: 33%;
+}
+
+.services__list .service-description {
+  padding: 47px 41px 20px;
+  width: 67%;
+  text-align: left;
+  opacity: 0.7;
+}
+
+.services__list li:hover .service-description {
+  opacity: 1;
+}
+
+/* Конец стилей блока "Услуги */
+
+/* Начало стилец блока "Почему мы */
+
+.why-we-block {
+  padding-top: 52px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+}
+
+.why-we-block h2 {
+  margin-bottom: 21px;;
+}
+
+.why-we-block p {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.services .why-we__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.services .why-we__list li {
+  padding: 25px 110px 30px;
+  width: 33%;
+}
+
+.services .why-we__list a {
+  display: inline-block;
+  text-align: center;
+}
+
+.services .why-we__list svg {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 17px;
+  width: 60px;
+  height: 60px;
+  fill: #092f3e;
+}
+
+/* Конец стилей "Почему мы" */
+
+/* Начало стилей "Готовы к сотрудничеству" */
+
+.cooperate-block {
+  padding-top: 56px;
+  padding-bottom: 84px;
+}
+
+.cooperate-block h2 {
+  margin-bottom: 22px;
+}
+
+.cooperate-block .btn {
+  margin: 0 auto;
+  margin-top: 28px;
+  padding: 12px 35px;
+  display: block;
+}
+
