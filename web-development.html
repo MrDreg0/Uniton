@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="https://use.fontawesome.com/9dbf1613f6.js"></script> <!-- Поставил загрузку скрипта в head, потому что иначе стрелки от FontAwesome мерцают при первой загрузке -->
 </head>
-<body class="inner-page services">
+<body class="inner-page web-development">
   <!-- Начало шапки -->
 
   <header>
@@ -79,58 +79,273 @@
           <li class="breadcrumb-item active" aria-current="page">Услуги</li>
         </ol>
       </nav>
+      <section class="this-service__about">
+        <span class="text__white">Услуги</span>
+        <h2 class="text__white">Разработка веб приложений</h2>
+        <p class="text__white">Специализируется на веб-разработке уже более 17 лет, с самого основания компании. Качество наших услуг и экспертиза в этой области привели к росту и успеху нашей компании. Мы будем рады поделиться своим опытом работы с широким спектром самых современных технологий для разработки программного обеспечения для вас!</p>
+      </section>
     </div>
   </header>
   <!-- Конец шапки -->
 
   <main>
     <!-- Начало основного блока сайта -->
-    <h1 class="visually-hidden">Services</h1> <!-- Блок невидим, и нужен только для доступности и валидности -->
-    <section class="services-block">
+    <h1 class="visually-hidden">Web Development</h1> <!-- Блок невидим, и нужен только для доступности и валидности -->
+    
+    <!-- Начало блока "Технологии и инструменты" -->
+    <section class="list-of-technology">
       <div class="container">
-        <h2>Услуги</h2>
-        <p>Специализируется на веб-разработке уже более 17 лет, с самого основания компании. Качество наших услуг и экспертиза в этой области привели к росту и успеху нашей компании. Мы будем рады поделиться своим опытом работы с широким спектром самых современных технологий для разработки программного обеспечения для вас!</p>
+        <div class="row">
+          <h2 class="col-lg-3">Технологии и инструменты</h2>
+          <div class="technology-list__wrapper col-lg-3">
+            <input type="radio" class="visually-hidden" id="technology-1"name="technology" checked>
+            <input type="radio" class="visually-hidden" id="technology-2"name="technology">
+            <input type="radio" class="visually-hidden" id="technology-3"name="technology">
+            <input type="radio" class="visually-hidden" id="technology-4"name="technology">
+            <input type="radio" class="visually-hidden" id="technology-5"name="technology">
+            <input type="radio" class="visually-hidden" id="technology-6"name="technology">
+            <ul>
+              <li>
+                <label for="technology-1">Веб-серверы</label>
+              </li>
+              <li>
+                <label for="technology-2">Технологии</label>
+              </li>
+              <li>
+                <label for="technology-3">Базы данных</label>
+              </li>
+              <li>
+                <label for="technology-4">Системы управления версиями</label>
+              </li>
+              <li>
+                <label for="technology-5">Автоматизация сборки</label>
+              </li>
+              <li>
+                <label for="technology-6">Методологии разработки</label>
+              </li>
+            </ul>
+          </div>
+          <div class="current-technology__about col-lg-6">
+            <img src="img/microsoft_dotnet.jpg" alt="Microsoft .NET image">
+            <p>Наша компания специализируется на разработке веб-приложений и программного обеспечения, предоставляет полный спектр услуг по ИТ аутсорсингу и обладает большим практическим опытом по разработке пользовательских приложений с использованием технологии React.js.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Конец блока "Технологии и инструменты" -->
+    <!-- Начало блока "Перечень технологий и инструментов" -->
+    
+    <ul class="enumeration-technology">
+      <li>
+        <img src="img/enumeration-technology/1.jpg" width="960" height="400" alt="Технологии и инструменты">
+        <section>
+          <div>
+            <h2>Технологии и инструменты</h2>
+            <p class="text__dark">Uniton Development — компания, которая занимается IT-консалтингом, разработкой программного обеспечения и оказанием широкого спектра аутсорсинговых услуг в сфере IT. Наша миссия — помочь компаниям сократить расходы на разработку ПО и ускорить вывод их продуктов на рынок.</p>
+          </div>
+        </section>
+      </li>
+      <li class="container">
+        <section>
+          <h2>Технологии и инструменты</h2>
+          <p class="text__dark">Uniton Development — компания, которая занимается IT-консалтингом, разработкой программного обеспечения и оказанием широкого спектра аутсорсинговых услуг в сфере IT. Наша миссия — помочь компаниям сократить расходы на разработку ПО и ускорить вывод их продуктов на рынок.</p>
+        </section>
+      </li>
+      <li>
+        <img src="img/enumeration-technology/2.jpg" width="960" height="400" alt="Технологии и инструменты">
+        <section>
+            <div>
+              <h2>Технологии и инструменты</h2>
+              <p class="text__dark">Uniton Development — компания, которая занимается IT-консалтингом, разработкой программного обеспечения и оказанием широкого спектра аутсорсинговых услуг в сфере IT. Наша миссия — помочь компаниям сократить расходы на разработку ПО и ускорить вывод их продуктов на рынок.</p>
+            </div>
+        </section>
+      </li>
+    </ul>
+
+    <!-- Конец блока "Перечень технологий и инструментов" -->
+    <!-- Начало блока "Экспертиза" -->
+
+    <section class="expertise-block">
+      <div class="container">
+        <h2>Экспертиза Uniton в области разработки веб-приложений</h2>
         <ul class="services__list">
           <li>
             <div>
               <svg x="0px" y="0px" viewBox="0 0 480 480" xml:space="preserve"><g><g><rect x="232" y="400" width="16" height="16"/></g></g><g><g><path d="M472,416h-8V128c0-17.673-14.327-32-32-32h-48V32c0-17.673-14.327-32-32-32H128c-17.673,0-32,14.327-32,32v64H48c-17.673,0-32,14.327-32,32v288H8c-4.418,0-8,3.582-8,8v24c0,17.673,14.327,32,32,32h416c17.673,0,32-14.327,32-32v-24C480,419.582,476.418,416,472,416z M112,32c0-8.837,7.163-16,16-16h224c8.837,0,16,7.163,16,16v32H112V32z M112,80h256v232c0,8.837-7.163,16-16,16H128c-8.837,0-16-7.163-16-16V80z M128,344h224c17.673,0,32-14.327,32-32V144h32v224H64V144h32v168C96,329.673,110.327,344,128,344z M32,128c0-8.837,7.163-16,16-16h48v16H56c-4.418,0-8,3.582-8,8v240c0,4.418,3.582,8,8,8h368c4.418,0,8-3.582,8-8V136c0-4.418-3.582-8-8-8h-40v-16h48c8.837,0,16,7.163,16,16v288H312c-2.12-0.002-4.155,0.839-5.656,2.336L292.688,432H187.312l-13.656-13.664c-1.501-1.497-3.536-2.338-5.656-2.336H32V128z M464,448c0,8.837-7.163,16-16,16H32c-8.837,0-16-7.163-16-16v-16h148.688l13.656,13.656c1.5,1.5,3.534,2.344,5.656,2.344h112c2.122,0,4.156-0.844,5.656-2.344L315.312,432H464V448z"/></g></g><g><g><rect x="136" y="256" width="208" height="16"/></g></g><g><g><rect x="136" y="288" width="192" height="16"/></g></g><g><g><rect x="184" y="224" width="160" height="16"/></g></g><g><g><rect x="128" y="32" width="16" height="16"/></g></g><g><g><rect x="160" y="32" width="16" height="16"/></g></g><g><g><rect x="192" y="32" width="16" height="16"/></g></g><g><g><rect x="152" y="224" width="16" height="16"/></g></g><g><g><path d="M212.8,134.4l-9.6-12.8l-32,24c-3.535,2.651-4.251,7.665-1.6,11.2c0.455,0.606,0.994,1.145,1.6,1.6l32,24l9.6-12.8L189.336,152L212.8,134.4z"/></g></g><g><g><path d="M310.4,147.2c-0.455-0.606-0.994-1.145-1.6-1.6l-32-24l-9.6,12.8l23.464,17.6L267.2,169.6l9.6,12.8l32-24C312.335,155.749,313.051,150.735,310.4,147.2z"/></g></g><g><g><rect x="196.925" y="144" transform="matrix(0.3715 -0.9284 0.9284 0.3715 9.7248 318.3653)" width="86.16" height="16"/></g></g></svg>
               <a href="#">Разработка веб-приложений</a>
             </div>
-            <p class="service-description">С 2000 года — даты основания компании — СКЭНД специализируется на разработке веб-приложений с богатым пользовательским интерфейсом и функционалом, поддерживаемым в браузере на стороне клиента. Раньше это было редким явлением, а сейчас стало фактически стандартом.</p>
           </li>
           <li>
             <div>
               <svg x="0px" y="0px" viewBox="0 0 480 480" xml:space="preserve"><g><g><rect x="216" y="72" width="216" height="16"/></g></g><g><g><rect x="216" y="104" width="136" height="16"/></g></g><g><g><rect x="216" y="136" width="136" height="16"/></g></g><g><g><rect x="280" y="40" width="152" height="16"/></g></g><g><g><rect x="248" y="40" width="16" height="16"/></g></g><g><g><rect x="232" y="320" width="16" height="16"/></g></g><g><g><path d="M133.656,53.656l-11.312-11.312l-16,16c-3.123,3.124-3.123,8.188,0,11.312l16,16l11.312-11.312L123.312,64L133.656,53.656z"/></g></g><g><g><path d="M197.656,58.344l-16-16l-11.312,11.312L180.688,64l-10.344,10.344l11.312,11.312l16-16C200.779,66.532,200.779,61.468,197.656,58.344z"/></g></g><g><g><rect x="126.697" y="56" transform="matrix(0.3165 -0.9486 0.9486 0.3165 43.1798 187.9208)" width="50.6" height="15.992"/></g></g><g><g><polygon points="416,248 416,184 400,184 400,248 384,248 384,168 368,168 368,248 352,248 352,208 336,208 336,248 320,248 320,200 304,200 304,248 288,248 288,216 272,216 272,248 256,248 256,264 432,264 432,248 "/></g></g><g><g><path d="M424,0H56C29.501,0.026,8.026,21.501,8,48v157.008v0.072V296v24c0.026,26.499,21.501,47.974,48,48h99.056l-32,64H80c-13.255,0-24,10.745-24,24s10.745,24,24,24h320c13.255,0,24-10.745,24-24s-10.745-24-24-24h-43.056l-32-64H424c26.499-0.026,47.974-21.501,48-48V48C471.974,21.501,450.499,0.026,424,0z M24,112.56l18.184,21.648c1.52,1.811,3.764,2.856,6.128,2.856H72.8c2.364,0,4.608-1.045,6.128-2.856L97.12,112.56l17.952,5.832l1.984,28.184c0.164,2.357,1.362,4.521,3.272,5.912l19.816,14.4c1.917,1.384,4.345,1.855,6.64,1.288l27.464-6.824l11.104,15.272l-14.968,24c-1.24,2.012-1.527,4.469-0.784,6.712l7.576,23.288c0.729,2.246,2.412,4.056,4.6,4.944L208,246.2v18.88l-26.24,10.632c-2.193,0.884-3.879,2.699-4.6,4.952l-2.4,7.336h-46.088c17.928-37.536,2.032-82.499-35.504-100.427c-22.047-10.53-47.833-9.712-69.168,2.195V112.56z M24,208.8c25.876-20.187,63.218-15.575,83.404,10.302C122.99,239.08,124.193,266.744,110.4,288H24V208.8z M400,448c4.418,0,8,3.582,8,8s-3.582,8-8,8H80c-4.418,0-8-3.582-8-8s3.582-8,8-8H400z M339.056,432H140.944l32-64h134.112L339.056,432z M456,320c0,17.673-14.327,32-32,32H56c-17.673,0-32-14.327-32-32v-16h90.576h0.072H456V320z M456,288H194.04l24.968-10.12c3.016-1.224,4.99-4.153,4.992-7.408V240.8c0.001-3.258-1.973-6.191-4.992-7.416L191.2,222.136l-5.264-16.2l15.856-25.44c1.72-2.764,1.593-6.294-0.32-8.928l-17.44-24c-1.915-2.637-5.237-3.849-8.4-3.064l-29.088,7.2L132.8,141.72l-2.104-29.84c-0.229-3.253-2.41-6.042-5.512-7.048l-28.2-9.168c-3.103-0.988-6.495-0.013-8.6,2.472l-19.256,22.92H52.064L32.8,98.136c-2.106-2.488-5.503-3.464-8.608-2.472L24,95.736V48c0-17.673,14.327-32,32-32h368c17.673,0,32,14.327,32,32V288z"/></g></g></svg>
               <a href="#">Разработка десктопного программного обеспечения</a>
             </div>
-            <p class="service-description">С 2000 года — даты основания компании — СКЭНД специализируется на разработке веб-приложений с богатым пользовательским интерфейсом и функционалом, поддерживаемым в браузере на стороне клиента. Раньше это было редким явлением, а сейчас стало фактически стандартом. Мы постоянно стремимся к совершенствованию в этой области, следя за современными тенденциями индустрии и немедленно обогащая свои знания.</p>
           </li>
           <li>
             <div>
               <svg x="0px" y="0px" viewBox="0 0 480 480" xml:space="preserve"><g><g><rect x="212" y="32" width="16" height="16"/></g></g><g><g><rect x="244" y="32" width="16" height="16"/></g></g><g><g><rect x="228" y="432" width="16" height="16"/></g></g><g><g><rect x="52" y="232" width="16" height="16"/></g></g><g><g><rect x="308" y="144" width="16" height="16"/></g></g><g><g><rect x="300" y="176" width="136" height="16"/></g></g><g><g><rect x="300" y="208" width="120" height="16"/></g></g><g><g><rect x="348" y="144" width="88" height="16"/></g></g><g><g><path d="M468,112h-80V32c0-17.673-14.327-32-32-32H116C98.327,0,84,14.327,84,32v168H12c-4.418,0-8,3.582-8,8v128c0,4.418,3.582,8,8,8h72v104c0,17.673,14.327,32,32,32h240c17.673,0,32-14.327,32-32V275.312L407.312,256H468c4.418,0,8-3.582,8-8V120C476,115.582,472.418,112,468,112z M100,32c0-8.837,7.163-16,16-16h240c8.837,0,16,7.163,16,16v32H100V32z M20,328V216h184v112h-40c-2.122,0-4.156,0.844-5.656,2.344L140,348.688l-18.344-18.344c-1.5-1.5-3.534-2.344-5.656-2.344H20z M372,448c0,8.837-7.163,16-16,16H116c-8.837,0-16-7.163-16-16v-32h272V448z M372,400H100v-56h12.688l21.656,21.656c3.124,3.123,8.188,3.123,11.312,0L167.312,344H212c4.418,0,8-3.582,8-8V208c0-4.418-3.582-8-8-8H100V80h272v32H268c-4.418,0-8,3.582-8,8v128c0,4.418,3.582,8,8,8h84.688L372,275.312V400z M460,240h-56c-2.122,0-4.156,0.844-5.656,2.344L380,260.688l-18.344-18.344c-1.5-1.5-3.534-2.344-5.656-2.344h-80V128h184V240z"/></g></g><g><g><rect x="44" y="264" width="136" height="16"/></g></g><g><g><rect x="44" y="296" width="120" height="16"/></g></g><g><g><rect x="84" y="232" width="96" height="16"/></g></g></svg>
               <a href="#">Разработка мобильных приложений</a>
             </div>
-            <p class="service-description">За 17 лет мы накопили существенный опыт в разработке десктопных приложений для основных операционных систем: Windows, macOS и Unix. В этой сфере мы работаем над проектами различной степени сложности — от низкоуровнего ПО (например, драйверы для Windows и Linux) до разработки пользовательских интерфейсов на .NET, Objective C и Qt.</p>
           </li>
           <li>
             <div>
               <svg x="0px" y="0px" viewBox="0 0 480 480" xml:space="preserve"><g><g><path d="M420,0H116C98.327,0,84,14.327,84,32v272h-8c-4.418,0-8,3.582-8,8v8H28v16h40v112H28v16h40v8c0,4.418,3.582,8,8,8h80c4.418,0,8-3.582,8-8v-8h22.136c21.715,10.502,45.519,15.971,69.64,16H344c10.777-0.041,20.573-6.263,25.192-16H420c17.673,0,32-14.327,32-32V32C452,14.327,437.673,0,420,0z M148,464H84V320h64V464z M344,360c6.627,0,12,5.373,12,12c0,6.627-5.373,12-12,12h-20v16h20c6.627,0,12,5.373,12,12c0,6.627-5.373,12-12,12h-20v16h20c6.627,0,12,5.373,12,12c0,6.627-5.373,12-12,12h-88.224c-22.287-0.037-44.262-5.24-64.2-15.2c-1.114-0.54-2.338-0.814-3.576-0.8h-24V336h24c1.94,0,3.813-0.705,5.272-1.984l14.352-12.552C237.719,295.268,252.154,255.39,245.8,216h1.6c13.149-0.039,24.625,8.904,27.8,21.664c5.532,21.946,3.964,45.081-4.48,66.08L270.584,304H252v16h92c6.627,0,12,5.373,12,12c0,6.627-5.373,12-12,12h-20v16H344z M436,432c0,8.837-7.163,16-16,16h-48.408c-0.849-6.075-3.681-11.7-8.056-16c11.046-10.715,11.314-28.355,0.599-39.401c-0.197-0.203-0.396-0.402-0.599-0.599c11.046-10.715,11.314-28.355,0.599-39.401c-0.197-0.203-0.396-0.402-0.599-0.599c11.068-10.768,11.311-28.47,0.542-39.538c-5.273-5.42-12.517-8.473-20.078-8.462h-56.432c7.861-22.601,8.945-47.007,3.12-70.216c-4.937-19.87-22.79-33.811-43.264-33.784H236c-4.418,0-8,3.582-8,8c0,0.655,0.081,1.308,0.24,1.944c9.189,36.382-2.857,74.841-31.16,99.48L184.992,320H164v-8c0-4.418-3.582-8-8-8h-56V80h336V432z M436,64H100V32c0-8.837,7.163-16,16-16h304c8.837,0,16,7.163,16,16V64z"/></g></g><g><g><rect x="108" y="432" width="16" height="16"/></g></g><g><g><rect x="116" y="32" width="16" height="16"/></g></g><g><g><rect x="148" y="32" width="16" height="16"/></g></g><g><g><rect x="180" y="32" width="16" height="16"/></g></g><g><g><rect x="124" y="136" width="168" height="16"/></g></g><g><g><rect x="124" y="168" width="168" height="16"/></g></g><g><g><rect x="188" y="104" width="104" height="16"/></g></g><g><g><rect x="156" y="104" width="16" height="16"/></g></g><g><g><path d="M404,200h-80c-4.418,0-8,3.582-8,8v64c0,4.418,3.582,8,8,8h80c4.418,0,8-3.582,8-8v-64C412,203.582,408.418,200,404,200z M396,264h-64v-48h64V264z"/></g></g><g><g><path d="M404,104h-80c-4.418,0-8,3.582-8,8v64c0,4.418,3.582,8,8,8h80c4.418,0,8-3.582,8-8v-64C412,107.582,408.418,104,404,104z M396,168h-64v-48h64V168z"/></g></g><g><g><path d="M188,200h-56c-4.418,0-8,3.582-8,8v64c0,4.418,3.582,8,8,8h56c4.418,0,8-3.582,8-8v-64C196,203.582,192.418,200,188,200z M180,264h-40v-48h40V264z"/></g></g></svg>
               <a href="#">Обеспечение качества</a>
             </div>
-            <p class="service-description">За 17 лет мы накопили существенный опыт в разработке десктопных приложений для основных операционных систем: Windows, macOS и Unix. В этой сфере мы работаем над проектами различной степени сложности — от низкоуровнего ПО (например, драйверы для Windows и Linux) до разработки пользовательских интерфейсов на .NET, Objective C и Qt.</p>
           </li>
           <li>
             <div>
               <svg x="0px" y="0px" viewBox="0 0 480 480" xml:space="preserve"><g><g><path d="M448,0H32C14.327,0,0,14.327,0,32v416c0,17.673,14.327,32,32,32h416c17.673,0,32-14.327,32-32V32C480,14.327,465.673,0,448,0z M344,464h-80v-16h80V464z M344,432h-80v-16h80V432z M344,384.168V400h-80v-15.832c0.001-3.445-2.204-6.503-5.472-7.592C212.935,362.527,182.401,319.682,184,272c0-37.912,14.4-69.672,40-89.248V192v96c0.002,2.906,1.579,5.583,4.12,6.992l72,40c2.414,1.339,5.346,1.339,7.76,0l72-40c2.541-1.409,4.119-4.086,4.12-6.992V182.752c25.6,19.576,40,51.336,40,89.248c1.599,47.682-28.935,90.527-74.528,104.576C346.204,377.665,343.999,380.723,344,384.168z M240,283.288v-86.576l64-35.56l64,35.56v86.576l-64,35.56L240,283.288z M464,448c0,8.837-7.163,16-16,16h-88v-74.192c49.106-18.134,81.254-65.476,80-117.808c0-49.432-21.912-89.888-60.136-111c-2.472-1.385-5.496-1.342-7.928,0.112c-2.438,1.438-3.935,4.057-3.936,6.888v10.4L307.88,145c-2.414-1.339-5.346-1.339-7.76,0L240,178.4V168c-0.003-4.418-3.587-7.998-8.005-7.995c-1.35,0.001-2.677,0.343-3.859,0.995C189.912,182.112,168,222.568,168,272c-1.254,52.332,30.894,99.674,80,117.808V464H32c-8.837,0-16-7.163-16-16V80h448V448z M464,64H16V32c0-8.837,7.163-16,16-16h416c8.837,0,16,7.163,16,16V64z"/></g></g><g><g><rect x="32" y="32" width="16" height="16"/></g></g><g><g><rect x="64" y="32" width="16" height="16"/></g></g><g><g><rect x="96" y="32" width="16" height="16"/></g></g><g><g><path d="M337.926,206.054c-18.748-18.742-49.14-18.738-67.882,0.01c-18.742,18.748-18.738,49.14,0.01,67.882c9.004,9.001,21.215,14.056,33.946,14.054c12.737,0.036,24.958-5.029,33.936-14.064C356.678,255.188,356.674,224.796,337.926,206.054z M281.376,217.376c10.267-10.364,26.287-12.369,38.792-4.856l-43.648,43.648C269.007,243.663,271.012,227.643,281.376,217.376z M326.624,262.632v-0.008c-10.45,9.941-26.167,11.889-38.728,4.8l43.584-43.584C338.993,236.345,336.988,252.365,326.624,262.632z"/></g></g><g><g><path d="M69.656,117.656l-11.312-11.312l-16,16c-3.123,3.124-3.123,8.188,0,11.312l16,16l11.312-11.312L59.312,128L69.656,117.656z"/></g></g><g><g><path d="M133.656,122.344l-16-16l-11.312,11.312L116.688,128l-10.344,10.344l11.312,11.312l16-16C136.779,130.532,136.779,125.468,133.656,122.344z"/></g></g><g><g><rect x="62.7" y="119.999" transform="matrix(0.3165 -0.9486 0.9486 0.3165 -61.2684 170.9559)" width="50.6" height="15.992"/></g></g><g><g><rect x="152" y="120" width="16" height="16"/></g></g><g><g><rect x="40" y="168" width="16" height="16"/></g></g><g><g><rect x="72" y="168" width="96" height="16"/></g></g><g><g><rect x="184" y="120" width="16" height="16"/></g></g><g><g><rect x="216" y="120" width="16" height="16"/></g></g><g><g><rect x="40" y="200" width="96" height="16"/></g></g><g><g><rect x="40" y="328" width="16" height="16"/></g></g><g><g><rect x="72" y="328" width="80" height="16"/></g></g><g><g><rect x="40" y="360" width="80" height="16"/></g></g><g><g><rect x="40" y="232" width="24" height="16"/></g></g><g><g><rect x="40" y="264" width="24" height="16"/></g></g><g><g><rect x="40" y="296" width="24" height="16"/></g></g><g><g><rect x="80" y="232" width="24" height="16"/></g></g><g><g><rect x="120" y="232" width="24" height="16"/></g></g><g><g><rect x="80" y="264" width="24" height="16"/></g></g><g><g><rect x="40" y="392" width="24" height="16"/></g></g><g><g><rect x="40" y="424" width="24" height="16"/></g></g><g><g><rect x="80" y="392" width="24" height="16"/></g></g></svg>
               <a href="#">Услуги DevOps</a>
             </div>
-            <p class="service-description">За 17 лет мы накопили существенный опыт в разработке десктопных приложений для основных операционных систем: Windows, macOS и Unix. В этой сфере мы работаем над проектами различной степени сложности — от низкоуровнего ПО (например, драйверы для Windows и Linux) до разработки пользовательских интерфейсов на .NET, Objective C и Qt.</p>
+          </li>
+          <li>
+            <div>
+              <span></span>
+              <a href="#">Все Услуги</a>
+            </div>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- Конец блока "Услуги" -->
+    <!-- Конец блока "Экспертиза" -->
+    <!-- Начало блока "Наши проекты по разработке веб приложений" -->
+
+    <section class="web-projects-block">
+      <div class="container">
+        <h2 class="web-projects-block__title">Наши проекты по разработке веб приложений</h2>
+        <p class="web-projects-block__text section-description__text text__dark">Помогает компаниям в поиске бизнес-решений, которые позволяют удовлетворять их требованиям, в том числе и к бюджету, самым оптимальным образом. Также, помимо оказания услуг по разработке ПО на заказ и обеспечению качества, сотрудники нашей компании создают</p>
+      </div>
+      <div id="carouselWebProjectsIndicators" class="web-projects-carousel carousel slide container" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <ul class="web-projects-block__list">
+              <li>
+                <img src="img/web-projects/slide-1/big-img-1.jpg" width="580" height="416" alt="big-image-1">
+                <div class="image__caption">
+                  <h3>Cirruspath</h3>
+                  <p class="text__dark">Cirruspath was behind the highest-rated app for integrating Salesforce with a user’s email inbox. Cirrus Insight Mobile helps</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/web-projects/slide-1/medium-img-1.jpg" width="280" height="415" alt="medium-img-1">
+              </li>
+              <li>
+                <div class="small-image__wrapper">
+                  <img src="img/web-projects/slide-1/small-img-1.jpg" alt="small-img-1">
+                  <div class="small-image__caption-wrapper">
+                    <img src="img/web-projects/slide-1/small-img-2.jpg" alt="small-img-2">
+                    <div class="image__caption">
+                      <h3>Cirruspath</h3>
+                      <p class="text__dark">Cirruspath was behind the highest-rated app for integrating Salesforce</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="carousel-item">
+            <ul class="web-projects-block__list">
+              <li>
+                <img src="img/web-projects/slide-2/big-img-2.jpg" width="580" height="416" alt="big-image-2">
+                <div class="image__caption">
+                  <h3>Cirruspath</h3>
+                  <p class="text__dark">Cirruspath was behind the highest-rated app for integrating Salesforce with a user’s email inbox. Cirrus Insight Mobile helps</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/web-projects/slide-2/medium-img-2.jpg" width="280" height="415" alt="medium-img-2">
+              </li>
+              <li>
+                <div class="small-image__wrapper">
+                  <img src="img/web-projects/slide-2/small-img-1.jpg" alt="small-img-1">
+                  <div class="small-image__caption-wrapper">
+                    <img src="img/web-projects/slide-2/small-img-2.jpg" alt="small-img-2">
+                    <div class="image__caption">
+                      <h3>Cirruspath</h3>
+                      <p class="text__dark">Cirruspath was behind the highest-rated app for integrating Salesforce</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="carousel-item">
+            <ul class="web-projects-block__list">
+              <li>
+                <img src="img/web-projects/slide-3/big-img-1.jpg" width="580" height="416" alt="big-image-1">
+                <div class="image__caption">
+                  <h3>Cirruspath</h3>
+                  <p class="text__dark">Cirruspath was behind the highest-rated app for integrating Salesforce with a user’s email inbox. Cirrus Insight Mobile helps</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/web-projects/slide-3/medium-img-3.jpg" width="280" height="415" alt="medium-img-3">
+              </li>
+              <li>
+                <div class="small-image__wrapper">
+                  <img src="img/web-projects/slide-3/small-img-1.jpg" alt="small-img-1">
+                  <div class="small-image__caption-wrapper">
+                    <img src="img/web-projects/slide-3/small-img-2.jpg" alt="small-img-2">
+                    <div class="image__caption">
+                      <h3>Cirruspath</h3>
+                      <p class="text__dark">Cirruspath was behind the highest-rated app for integrating Salesforce</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="carousel-item">
+            <ul class="web-projects-block__list">
+              <li>
+                <img src="img/web-projects/slide-4/big-img-2.jpg" width="580" height="416" alt="big-image-2">
+                <div class="image__caption">
+                  <h3>Cirruspath</h3>
+                  <p class="text__dark">Cirruspath was behind the highest-rated app for integrating Salesforce with a user’s email inbox. Cirrus Insight Mobile helps</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/web-projects/slide-4/medium-img-2.jpg" width="280" height="415" alt="medium-img-2">
+              </li>
+              <li>
+                <div class="small-image__wrapper">
+                  <img src="img/web-projects/slide-4/small-img-1.jpg" alt="small-img-1">
+                  <div class="small-image__caption-wrapper">
+                    <img src="img/web-projects/slide-4/small-img-2.jpg" alt="small-img-2">
+                    <div class="image__caption">
+                      <h3>Cirruspath</h3>
+                      <p class="text__dark">Cirruspath was behind the highest-rated app for integrating Salesforce</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselWebProjectsIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselWebProjectsIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselWebProjectsIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselWebProjectsIndicators" data-slide-to="3"></li>
+        </ol>
+        <a class="carousel-control carousel-control-prev" href="#carouselWebProjectsIndicators" role="button" data-slide="prev">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control carousel-control-next" href="#carouselWebProjectsIndicators" role="button" data-slide="next">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    
+
+
+
+
     <!-- Начало блока "Отрасли" -->
 
     <section class="industry-block">

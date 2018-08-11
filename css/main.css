@@ -5,6 +5,9 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
+}
+
+main {
   background-color: #f1f7f9;
 }
 
@@ -806,13 +809,12 @@ footer {
 }
 
 
-/* --------------- Страница Услуги --------------- */
+/* --------------- Страница "Услуги" --------------- */
 
 
 /* Начало стилей для шапки */
 
 .services header {
-  margin-bottom: 30px;
   background-image: none;
 }
 
@@ -836,7 +838,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: 197px;
+  min-height: 100%;
 }
 
 .logo-link {
@@ -844,6 +846,7 @@ footer {
 }
 
 .breadcrumb {
+  margin-bottom: 0;
   padding: 1.75rem 0.3rem;
   background-color: transparent;
 }
@@ -865,6 +868,7 @@ footer {
 
 .services .services-block {
   margin-bottom: 145px;
+  padding-top: 30px;
 }
 
 .services .services-block h2 {
@@ -915,7 +919,7 @@ footer {
   text-align: center;
 }
 
-.services .why-we__list {
+.why-we__list {
   margin: 0;
   padding: 0;
   display: flex;
@@ -925,17 +929,17 @@ footer {
   list-style: none;
 }
 
-.services .why-we__list li {
+.why-we__list li {
   padding: 25px 110px 30px;
   width: 33%;
 }
 
-.services .why-we__list a {
+.why-we__list a {
   display: inline-block;
   text-align: center;
 }
 
-.services .why-we__list svg {
+.why-we__list svg {
   display: block;
   margin: 0 auto;
   margin-bottom: 17px;
@@ -963,4 +967,274 @@ footer {
   padding: 12px 35px;
   display: block;
 }
+
+
+/* --------------- Страница "Разработка веб приложений" --------------- */
+
+
+/* Начало стилей "Описание текущей услуги" */
+
+.web-development header::before {
+  background-position: -97px -379px;
+}
+
+.this-service__about {
+  margin: 0 auto 0 0;
+  padding: 31px 2px 120px;
+  width: 50%;
+  text-align: left;
+}
+
+.this-service__about span {
+  padding: 1px 14px;
+  margin-bottom: 19px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  background-color: rgba(128, 145, 199, 0.5);
+  background-image: linear-gradient(to right, rgba(33, 187, 189, 0.45), rgba(128, 145, 199, 0.45));
+}
+
+.this-service__about h2 {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.this-service__about p {
+  line-height: 1.65rem;
+}
+
+/* Конец стилей "Описание текущей услуги" */
+
+/* Начало стилей блока "Технологии и инструменты" */
+
+.list-of-technology {
+  padding: 63px 0;
+}
+
+.list-of-technology h2 {
+  padding-left: 0;
+  padding-right: 0;
+  border-right: 2px solid #15a2be;
+}
+
+.list-of-technology h2,
+.list-of-technology label {
+  text-align: left;
+  color: #092f3e;
+}
+
+.technology-list__wrapper {
+  padding: 7px 8px;
+}
+
+.technology-list__wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.technology-list__wrapper li {
+  position: relative;
+}
+
+.technology-list__wrapper label {
+  padding-left: 47px;
+  margin-bottom: 11px;
+}
+
+.technology-list__wrapper label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 26px;
+  width: 26px;
+  border: 2px solid #15a2be;
+  border-radius: 13px;
+}
+
+.technology-list__wrapper label::after {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  height: 14px;
+  width: 14px;
+  background-color: #15a2be;
+  border-radius: 7px;
+}
+
+#technology-1:checked ~ ul label[for="technology-1"],
+#technology-2:checked ~ ul label[for="technology-2"],
+#technology-3:checked ~ ul label[for="technology-3"],
+#technology-4:checked ~ ul label[for="technology-4"],
+#technology-5:checked ~ ul label[for="technology-5"],
+#technology-6:checked ~ ul label[for="technology-6"] {
+  color: #15a2be;
+}
+
+#technology-1:checked ~ ul label[for="technology-1"]::after,
+#technology-2:checked ~ ul label[for="technology-2"]::after,
+#technology-3:checked ~ ul label[for="technology-3"]::after,
+#technology-4:checked ~ ul label[for="technology-4"]::after,
+#technology-5:checked ~ ul label[for="technology-5"]::after,
+#technology-6:checked ~ ul label[for="technology-6"]::after {
+  content: '';
+}
+
+.current-technology__about {
+  padding: 37px 42px;
+  background-color: #ffffff;
+}
+
+.current-technology__about p {
+  padding: 5px 12px;
+  line-height: 1.65rem;
+}
+
+/* Конец стилей блока "Технологии и инструменты" */
+
+/* Начало стилей блока "Перечисление технологи" */
+
+.enumeration-technology {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.enumeration-technology li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.enumeration-technology li:nth-child(3n) {
+  flex-direction: row-reverse;
+}
+
+.enumeration-technology li:nth-child(3n) div {
+  margin: 0;
+  margin-left: auto;
+}
+
+.enumeration-technology section {
+  padding: 108px 30px 92px;
+}
+
+.enumeration-technology li:not(:nth-child(2n)) section,
+.enumeration-technology li:not(:nth-child(2n)) img {
+  background-color: #ffffff;
+  width: 50%;
+}
+
+.enumeration-technology li:not(:nth-child(2n)) div {
+  width: 580px;
+}
+
+.enumeration-technology p {
+  text-align: center;
+}
+
+.enumeration-technology li:not(:nth-child(2n)) h2,
+.enumeration-technology li:not(:nth-child(2n)) p {
+  text-align: left;
+}
+
+/* Конец стилей блока "Перечисление технологи" */
+
+/* Начала стилей блока "Экспертиза" */
+
+.expertise-block {
+  padding-top: 57px;
+  padding-bottom: 112px;
+}
+
+.web-development .services__list li:last-child div {
+  padding: 83px 43px 37px;
+}
+
+/* Конец стилей блока "Экспертиза" */
+
+/* Начало стилей блока "Наши проекты по разработке веб-приложений" */
+
+.web-projects-block {
+  padding-top: 55px;
+  padding-bottom: 65px;
+  margin-bottom: 55px;
+  background-color: #ffffff;
+}
+
+.web-projects-block .container {
+  padding: 0;
+}
+
+.web-projects-block__title {
+  margin-bottom: 29px;
+}
+
+.web-projects-block__text {
+  margin-bottom: 58px;
+}
+
+.web-projects-block__list {
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.web-projects-block__list li {
+  position: relative;
+}
+
+.web-projects-block__list li:first-child {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.web-projects-block__list .image__caption {
+  position: absolute;
+  padding: 30px 43px 16px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.web-projects-block__list .image__caption h3 {
+  font-size: 1.25rem;
+  color: #15a2be;
+  text-transform: uppercase;
+}
+
+.web-projects-block__list .image__caption p {
+  font-size: 1.0625rem;
+}
+
+.small-image__caption-wrapper {
+  margin-top: 25px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.web-projects-carousel .carousel-control {
+  color: #15a2be;
+}
+
+.web-projects-carousel .carousel-indicators li {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.web-projects-carousel .carousel-indicators li.active {
+  background-color: #15a2be;
+}
+
+.web-projects-carousel .carousel-indicators {
+  bottom: -23px;
+  left: 13px;
+}
+
+/* Конец стилей блока "Портфолио" */
+
+/* Начало стилей блока "Почему мы" */
 
