@@ -866,17 +866,17 @@ footer {
 
 /* Начало стилей блока "Услуги" */
 
-.services .services-block {
+.all-services.services-block {
   margin-bottom: 145px;
   padding-top: 30px;
 }
 
-.services .services-block h2 {
+.all-services.services-block h2 {
   margin-bottom: 14px;
   text-align: left;
 }
 
-.services .services__list li {
+.all-services .services__list li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -885,7 +885,7 @@ footer {
   min-height: 202px;
 }
 
-.services .services__list div {
+.all-services .services__list div {
   width: 33%;
 }
 
