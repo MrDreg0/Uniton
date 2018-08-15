@@ -1041,6 +1041,7 @@ footer {
 .technology-list__wrapper label {
   padding-left: 47px;
   margin-bottom: 11px;
+  cursor: pointer;
 }
 
 .technology-list__wrapper label::before {
@@ -1082,12 +1083,13 @@ footer {
   content: '';
 }
 
-.current-technology__about {
+.blocks div {
+  display: none;
   padding: 37px 42px;
   background-color: #ffffff;
 }
 
-.current-technology__about p {
+.blocks p {
   padding: 5px 12px;
   line-height: 1.65rem;
 }
